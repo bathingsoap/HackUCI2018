@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Level9 : MonoBehaviour {
 	SpriteRenderer r;
-	int current = 0;
 	private GUIStyle guiStyle = new GUIStyle();
 	float t;
 	//Rigidbody2D m;
@@ -30,19 +29,19 @@ public class Level9 : MonoBehaviour {
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			GameObject.Find ("main").transform.Rotate(new Vector3(0,0,-2));
 		}
-		if (Time.time-t < 12)
-			r.material.color = new Color32 (255, (byte)(255 - 12.5 * (Time.time-t)), (byte)(255 - 5.03 * (Time.time-t)), 255);
+		if (Time.time-t < 10)
+			r.material.color = new Color32 (255, (byte)(255 - 15 * (Time.time-t)), (byte)(255 - 6.3 * (Time.time-t)), 255);
 		else {
 			Invoke ("LoadScene", 1);
 		}
 	}
 	void LoadScene(){
-		SceneManager.LoadScene ("Level10");
+		SceneManager.LoadScene ("EndGame");
 	}
 
 	void verticalMove(){
-		GameObject.Find ("down").GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -4);
-		GameObject.Find ("up").GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 4);
+		GameObject.Find ("down").GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -5);
+		GameObject.Find ("up").GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 5);
 	}
 	void horizontalMove(){
 		GameObject.Find ("right1").GetComponent<Rigidbody2D> ().velocity = new Vector2 (5, 0);

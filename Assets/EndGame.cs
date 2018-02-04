@@ -15,7 +15,6 @@ public class EndGame : MonoBehaviour {
 		
 	}
 	void OnGUI(){
-		
 		guiStyle2.fontSize = 75; //change the font size
 		guiStyle2.normal.textColor = new Color32(255,105,192,255);
 		guiStyle2.alignment = TextAnchor.MiddleCenter;

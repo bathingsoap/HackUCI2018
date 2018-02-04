@@ -40,9 +40,9 @@ public class MainClick : MonoBehaviour {
 		SceneManager.LoadScene ("Level1");
 	}
 	void OnGUI(){
-		guiStyle.fontSize = 25; //change the font size
+		guiStyle.fontSize = 60; //change the font size
 		guiStyle.normal.textColor = Color.white;
 		guiStyle.alignment = TextAnchor.MiddleCenter;
-		GUI.Label (new Rect (310, 150, 50, 20), "PINK", guiStyle);
+		GUI.Label (new Rect (600, 330, 80, 60), "PINK", guiStyle);
 	}
 }

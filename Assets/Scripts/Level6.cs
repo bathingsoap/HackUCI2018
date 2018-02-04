@@ -24,7 +24,7 @@ public class Level6 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Keypad9)) {
+		if (Input.GetKeyDown (KeyCode.Keypad9) || Input.GetKeyDown(KeyCode.Alpha9)) {
 			going = true;
 			t = Time.time;
 			current++;
@@ -32,7 +32,7 @@ public class Level6 : MonoBehaviour {
 		}
 		if (going) {
 			if (Time.time - t < 3) {
-				if (Input.GetKeyDown (KeyCode.Keypad1)) {
+				if (Input.GetKeyDown (KeyCode.Keypad1)|| Input.GetKeyDown(KeyCode.Alpha1)) {
 					current++;
 					r.material.color = new Color32 (255, (byte)(255 - 50 * current), (byte)(255 - 21 * current), 255);
 				}
@@ -50,10 +50,10 @@ public class Level6 : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.Label (new Rect (0, 0, 100, 20), "Keyboard", guiStyle);
-		guiStyle2.fontSize = 80; //change the font size
+		guiStyle2.fontSize = 100; //change the font size
 		//guiStyle.font = myfont;
 		guiStyle2.normal.textColor = new Color32(255,105,192,255);
 		guiStyle2.alignment = TextAnchor.MiddleCenter;
-		GUI.Label (new Rect (150, 150, 50, 20), "HELP ME", guiStyle2);
+		GUI.Label (new Rect (150, 150, 100, 20), "HELP ME", guiStyle2);
 	}
 }
