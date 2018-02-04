@@ -8,12 +8,11 @@ public class Level8 : MonoBehaviour {
 	SpriteRenderer r;
 	int current = 0;
 	private GUIStyle guiStyle = new GUIStyle();
-
+	private GUIStyle guiStyle2 = new GUIStyle();
 	// Use this for initialization
 	void Start () {
 		r = GameObject.Find("white").GetComponent<SpriteRenderer>();
 		r.material.color = new Color32 (255, 255, 255, 255);
-		guiStyle.normal.textColor = Color.black;
 
 	}
 
@@ -51,7 +50,14 @@ public class Level8 : MonoBehaviour {
 		SceneManager.LoadScene ("Level9");
 	}
 	void OnGUI(){
+		guiStyle.fontSize = 35;
+		guiStyle.normal.textColor = Color.black;
+		guiStyle2.normal.textColor = Color.red;
+		//guiStyle2.normal.textColor = new Color32 (255, 105, 192, 255);
+		guiStyle2.alignment = TextAnchor.MiddleCenter;
+		guiStyle2.fontSize = 80;
+		guiStyle2.font = (Font)Resources.Load ("Galathea");
 		GUI.Label (new Rect (0, 0, 100, 20), "Keyboard", guiStyle);
-
+		GUI.Label (new Rect (20, 20, 1280, 150), "PINK IS...", guiStyle2);
 	}
 }

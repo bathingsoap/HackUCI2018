@@ -32,7 +32,7 @@ public class Level7Circle : MonoBehaviour {
 		Destroy (GameObject.Find("blackcircle").gameObject);
 		GameObject.Find ("background").GetComponent<SpriteRenderer> ().material.color = new Color32 (255, 105, 192, 255);
 
-		Invoke ("EndGame2", 1.5f);
+		Invoke ("EndGame2", 2.3f);
 	}
 
 	void EndGame2(){

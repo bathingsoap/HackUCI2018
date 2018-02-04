@@ -24,7 +24,7 @@ public class Level5 : MonoBehaviour {
 		t = 0;
 		timelimit = 1f;
 		guiStyle.normal.textColor = Color.black;
-
+		guiStyle.fontSize = 35;
 	}
 
 	// Update is called once per frame

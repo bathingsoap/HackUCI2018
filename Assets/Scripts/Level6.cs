@@ -19,6 +19,7 @@ public class Level6 : MonoBehaviour {
 		current = 0;
 		guiStyle2.font = (Font)Resources.Load ("Xanadu");
 		guiStyle.normal.textColor = Color.black;
+		guiStyle.fontSize = 35;
 		//myfont = "Xanadu";
 	}
 	

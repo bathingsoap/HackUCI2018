@@ -14,7 +14,7 @@ public class Level3 : MonoBehaviour {
 		r = GameObject.Find("white").GetComponent<SpriteRenderer>();
 		r.material.color = new Color32 (255, 255, 255, 255);
 		guiStyle.normal.textColor = Color.black;
-
+		guiStyle.fontSize = 35;
 	}
 	
 	// Update is called once per frame

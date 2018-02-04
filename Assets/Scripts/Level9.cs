@@ -14,6 +14,7 @@ public class Level9 : MonoBehaviour {
 		r = GameObject.Find("white").GetComponent<SpriteRenderer>();
 		r.material.color = new Color32 (255, 255, 255, 255);
 		guiStyle.normal.textColor = Color.black;
+		guiStyle.fontSize = 35;
 		t = Time.time;
 		//Debug.Log (t);
 		Invoke ("verticalMove", 5);

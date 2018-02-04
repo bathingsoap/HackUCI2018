@@ -11,6 +11,7 @@ public class Level7 : MonoBehaviour {
 	void Start () {
 		//r = GameObject.Find("background").GetComponent<SpriteRenderer>();
 		guiStyle.normal.textColor = Color.black;
+		guiStyle.fontSize = 35;
 		foreach (SpriteRenderer c in GameObject.Find("surrounding").GetComponentsInChildren<SpriteRenderer>()) {
 			//c.material.color = new Color32 (0, 255, 255, 255);
 			c.material.color = new Color32 (255, 255, 255, 255);

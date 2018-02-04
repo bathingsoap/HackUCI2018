@@ -14,6 +14,7 @@ public class Level1 : MonoBehaviour {
 		white = GameObject.Find ("white");
 	 	white.GetComponent<SpriteRenderer> ().material.color = new Color32 (255, 255, 255, 255);
 		guiStyle.normal.textColor = Color.black;
+		guiStyle.fontSize = 35;
 
 	}
 	void Update () {
